@@ -11,7 +11,7 @@ to compose this presentation.
 ```
 <lp-three-section minHeight="500" bgcolor="#F9F9F9" titlecolor="#979797">
       <span class="title">
-      A title to all section 
+      Art, Education & Social 
       </span>
       <div class="highlight-1">
         <!-- Above content commonly put img -->
@@ -25,15 +25,15 @@ to compose this presentation.
       </div>
       <div class="text-highlight-1">
           <!-- label text placed below above content like images -->
-          Text 1 succint 
+          We're the art to approach and to ...
       </div>
       <div class="text-highlight-2">
           <!-- label text placed below above content like images -->
-          Text 2 succint 
+          Build personal identity. Insights to help... 
       </div>
       <div class="text-highlight-3">
           <!-- label text placed below above content like images -->
-          Text 3 succint 
+          Social for to create, share and learn from ... 
       </div>            
 </lp-three-section>
 ```
