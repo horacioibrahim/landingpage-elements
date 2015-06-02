@@ -40,4 +40,4 @@ to compose this presentation.
 
 Outcome
 =======
-![](https://github.com/horacioibrahim/landingpages-elements/blob/master/lp-three-section/outcome.png)
+![](https://github.com/horacioibrahim/landingpage-elements/blob/master/lp-three-section/outcome.png)
