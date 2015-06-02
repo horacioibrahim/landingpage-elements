@@ -8,6 +8,8 @@ Usage
 The class `title`, `highlight-[1,2,3]` and `text-highlight-[1,2,3]` are required
 to compose this presentation.
 
+In this sample I used images (sprited) sized width="145" height="144".
+
 ```
 <lp-three-section minHeight="500" bgcolor="#F9F9F9" titlecolor="#979797">
       <span class="title">
@@ -15,7 +17,7 @@ to compose this presentation.
       </span>
       <div class="highlight-1">
         <!-- Above content commonly put img -->
-        <img-sprite src="/images/sprite-call.png"></img-sprite>
+        <img-sprite src="/images/sprite-call.png" width="145" height="144"></img-sprite>
       </div>
       <div class="highlight-2">
         <img-sprite src="/images/sprite-call.png"></img-sprite>
