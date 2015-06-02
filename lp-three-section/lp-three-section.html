@@ -1,0 +1,44 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<polymer-element name="lp-three-section" attributes="minHeight bgcolor titlecolor titleweight">
+  <template>
+    <link rel="stylesheet" href="lp-three-section.css">  
+
+    <div id="mainContent" style="min-height: {{minHeight}}px; background-color: {{bgcolor}}" horizontal layout>
+      <h1 style="color: {{titlecolor}}; font-weight: {{titleweight}};">
+        <content select=".title"></content>
+      </h1>
+    <div class="highlights" horizontal layout>
+      <div flex>
+        <content select=".highlight-1"></content>
+      </div>
+      <div flex>
+        <content select=".highlight-2"></content>
+      </div>
+      <div flex>
+        <content select=".highlight-3"></content>
+      </div>      
+    </div>
+    
+    <div class="texts" style="color: {{titlecolor}};" horizontal layout>
+      <div flex>
+        <content select=".text-highlight-1"></content>
+      </div>
+      <div flex>
+        <content select=".text-highlight-2"></content>
+      </div>
+      <div flex>
+        <content select=".text-highlight-3"></content>
+      </div>          
+    </div>
+    <!-- All not predefined content -->
+    <content></content>
+  </template>
+  <script>
+    (function () {
+      Polymer({
+        // define element prototype here
+      });
+    })();
+  </script>
+</polymer-element>
