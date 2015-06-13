@@ -1,36 +1,37 @@
-<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../core-media-query/core-media-query.html">
 
-<polymer-element name="lp-three-section" attributes="minHeight bgcolor titlecolor titleweight">
+<polymer-element name="lp-three-section" attributes="minHeight bgcolor titlecolor titleweight textscolor">
   <template>
     <link rel="stylesheet" href="lp-three-section.css">  
-
+    <core-media-query query="max-width: 640px" queryMatches="{{phoneScreen}}"
+    ></core-media-query>
     <div id="mainContent" style="min-height: {{minHeight}}px; background-color: {{bgcolor}}" horizontal layout>
       <h1 style="color: {{titlecolor}}; font-weight: {{titleweight}};">
         <content select=".title"></content>
       </h1>
-    <div class="highlights" horizontal layout>
-      <div flex>
+    <div class="highlights" layout vertical?="{{phoneScreen}}"
+       horizontal?="{{!phoneScreen}}" style="color: {{textscolor}};">
+      <div auto-vertical>
         <content select=".highlight-1"></content>
+        <span class="texts">
+          <content select=".text-highlight-1"></content>
+        </span>
       </div>
-      <div flex>
+      <div auto-vertical>
         <content select=".highlight-2"></content>
+        <span class="texts">
+          <content select=".text-highlight-2"></content>
+        </span>
       </div>
-      <div flex>
+      <div auto-vertical>
         <content select=".highlight-3"></content>
+        <span class="texts">
+          <content select=".text-highlight-3"></content>
+        </span>
       </div>      
     </div>
     
-    <div class="texts" style="color: {{titlecolor}};" horizontal layout>
-      <div flex>
-        <content select=".text-highlight-1"></content>
-      </div>
-      <div flex>
-        <content select=".text-highlight-2"></content>
-      </div>
-      <div flex>
-        <content select=".text-highlight-3"></content>
-      </div>          
-    </div>
     <!-- All not predefined content -->
     <content></content>
   </template>
